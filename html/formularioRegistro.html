@@ -4,7 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formulario Registro</title>
+    <link rel="stylesheet" href="../css/styleFR.css" />
   </head>
-  <body></body>
+  <body>
+    <fieldset>
+      <legend>DIRECCIÓN DE ENVÍO</legend>
+      <form class="formR" name="formRegistro">
+        <label for="calleP">Calle principal</label>
+        <br />
+        <input type="text" />
+        <br />
+        <label for="transversal">Transversal</label>
+        <br />
+        <input type="text" />
+        <br />
+        <input type="checkbox" />
+        <label for="entregaP">Entrega propietario</label>
+        <br />
+        <input type="checkbox" />
+        <label for="entregaT">Entrega a un tercero</label>
+        <br />
+        <label for="cantones">Cantones</label>
+        <select name="cantones" id="cantones">
+          <option value="1">Quito</option>
+          <option value="2">Cayambe</option>
+          <option value="3">Mejía</option>
+          <option value="4">Rumiñagui</option>
+        </select>
+        <br>
+        <input type="button" value="ENVIAR DATOS">
+    </fieldset>
+
+    <fieldset>
+      <legend>INFORMACIÓN CONFIDENCIAL</legend>
+      <label for="codifoP">Codigo Postal:</label>
+      <input type="text" />
+      <br />
+      <label for="referencaisD">Referencias de la dirección:</label>
+      <br />
+      <textarea name="referenciasD" cols="30" rows="10"></textarea>
+      <br />
+      <input type="button" value="Guardar" />
+    </fieldset>
+  </form>
+  </body>
 </html>

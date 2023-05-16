@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Producto</title>
+    <link rel="stylesheet" href="../css/styleFR.css">
+  </head>
+  <body>
+    <fieldset>
+      <legend>DATOS BÁSICOS</legend>
+      <form class="formP" name="formProducto">
+        <label for="nombreP">Nombre del producto:</label>
+        <input type="text" />
+        <br />
+        <label for="referencaisD">Descripción:</label>
+        <br />
+        <textarea name="referenciasD" cols="30" rows="10"></textarea>
+        <br />
+        <label for="foto">Foto</label>
+        <br>
+        <input type="file">
+        <br>
+        <input type="button" value="ENVIAR DATOS">
+    </fieldset>
+
+    <fieldset>
+      <legend>INFORMACIÓN CONFIDENCIAL</legend>
+      <label for="codifoP">Codigo Postal:</label>
+      <input type="text" />
+      <br />
+      <label for="referencaisD">Referencias de la dirección:</label>
+      <br />
+      <textarea name="referenciasD" cols="30" rows="10"></textarea>
+      <br />
+      <input type="button" value="Guardar" />
+    </fieldset>
+  </form>
+  </body>
+</html>
