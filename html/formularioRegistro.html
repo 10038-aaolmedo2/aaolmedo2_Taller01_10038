@@ -20,10 +20,10 @@
         <br />
         <input type="text"  oninput="validarTexto(this)"/>
         <br />
-        <input type="checkbox" />
+        <input type="checkbox" id="mostrarCampo2" onchange="mostrarOcultarCampo2()" />
         <label for="entregaP">Entrega propietario</label>
         <br />
-        <input type="checkbox" />
+        <input type="checkbox" id="mostrarCampo" onchange="mostrarOcultarCampo()"/>
         <label for="entregaT">Entrega a un tercero</label>
         <br />
         <label for="cantones">Cantones</label>
@@ -34,10 +34,10 @@
           <option value="4">Rumiñagui</option>
         </select>
         <br>
-        <input type="button" value="ENVIAR DATOS">
+        <input type="button" value="ENVIAR DATOS" id="campoOculto2" style="display: none">
     </fieldset>
 
-    <fieldset>
+    <fieldset style="display: none;" id="campoOculto">
       <legend>INFORMACIÓN CONFIDENCIAL</legend>
       <label for="codifoP">Codigo Postal:</label>
       <input type="text" oninput="validarNumeros(this)" />

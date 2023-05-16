@@ -13,3 +13,25 @@ function validarNumeros(input) {
         input.value = valor.replace(/[^0-9]/g, '');
     }
 }
+
+function mostrarOcultarCampo() {
+    var campoOculto = document.getElementById("campoOculto");
+    var checkbox = document.getElementById("mostrarCampo");
+
+    if (checkbox.checked) {
+        campoOculto.style.display = "block";
+    } else {
+        campoOculto.style.display = "none";
+    }
+}
+
+function mostrarOcultarCampo2() {
+    var campoOculto = document.getElementById("campoOculto2");
+    var checkbox = document.getElementById("mostrarCampo2");
+
+    if (checkbox.checked) {
+        campoOculto.style.display = "block";
+    } else {
+        campoOculto.style.display = "none";
+    }
+}
