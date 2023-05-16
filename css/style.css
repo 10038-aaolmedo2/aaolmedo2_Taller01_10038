@@ -125,14 +125,18 @@ h3 {
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
+    width: 100px;
+    top: 100px;
+    left: 15px;
+    position: relative;
 }
 
 .matriculaL {
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
-}
-
-.formR {
-    width: 50%;
+    width: 100px;
+    top: 100px;
+    left: 15px;
+    position: relative;
 }
