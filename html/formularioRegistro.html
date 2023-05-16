@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario Registro</title>
     <link rel="stylesheet" href="../css/styleFR.css" />
+    <script src="../js/jsformR.js"></script>
   </head>
   <body>
     <fieldset>
@@ -13,11 +14,11 @@
       <form class="formR" name="formRegistro">
         <label for="calleP">Calle principal</label>
         <br />
-        <input type="text" />
+        <input type="text" oninput="validarTexto(this)"/>
         <br />
         <label for="transversal">Transversal</label>
         <br />
-        <input type="text" />
+        <input type="text"  oninput="validarTexto(this)"/>
         <br />
         <input type="checkbox" />
         <label for="entregaP">Entrega propietario</label>
@@ -39,7 +40,7 @@
     <fieldset>
       <legend>INFORMACIÓN CONFIDENCIAL</legend>
       <label for="codifoP">Codigo Postal:</label>
-      <input type="text" />
+      <input type="text" oninput="validarNumeros(this)" />
       <br />
       <label for="referencaisD">Referencias de la dirección:</label>
       <br />

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario Producto</title>
     <link rel="stylesheet" href="../css/styleFR.css">
+    <script src="../js/jsformP.js"></script>
   </head>
   <body>
     <fieldset>
       <legend>DATOS BÁSICOS</legend>
-      <form class="formP" name="formProducto">
+      <form id="formProducto">
         <label for="nombreP">Nombre del producto:</label>
-        <input type="text" />
+        <input type="text" oninput="validarTexto(this)"/>
         <br />
         <label for="referencaisD">Descripción:</label>
         <br />
@@ -20,7 +21,7 @@
         <br />
         <label for="foto">Foto</label>
         <br>
-        <input type="file">
+        <input type="file" min="1">
         <br>
         <input type="checkbox" name="infConf" id="">Añadir información confidencial
     </fieldset>
@@ -28,16 +29,22 @@
     <fieldset>
       <legend>DATOS ECONÓMICOS</legend>
         <label for="">Precio</label>
-        <input type="number" name="" id=""> $
-        Impuestos 
+        <input type="number" name="" id="" min="0"> $
+        <label for="">Impuestos</label> 
         <select name="impuestos" id="impuestos">
           <option value="4">4%</option>
           <option value="12">12%</option>
           <option value="15">15%</option>
         </select>
+        <br>
+        <label for="">Promoción</label>
+        <br>
+          <input type="radio" name="prom" id="ninguno" checked>Ninguno <br>
+          <input type="radio" name="prom" id="transgrat">Transporte gratuito<br>
+          <input type="radio" name="prom" id="descuento">Descuento 5%
     </fieldset>
     <input type="button" value="Guardar cambios">
-    <input type="button" value="Borrar los datos introducidos">
+    <input type="button" value="Borrar los datos introducidos" onclick="borrarFormulario()">
   </form>
   </body>
 </html>
