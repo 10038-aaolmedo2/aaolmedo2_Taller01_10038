@@ -22,20 +22,22 @@
         <br>
         <input type="file">
         <br>
-        <input type="button" value="ENVIAR DATOS">
+        <input type="checkbox" name="infConf" id="">Añadir información confidencial
     </fieldset>
 
     <fieldset>
-      <legend>INFORMACIÓN CONFIDENCIAL</legend>
-      <label for="codifoP">Codigo Postal:</label>
-      <input type="text" />
-      <br />
-      <label for="referencaisD">Referencias de la dirección:</label>
-      <br />
-      <textarea name="referenciasD" cols="30" rows="10"></textarea>
-      <br />
-      <input type="button" value="Guardar" />
+      <legend>DATOS ECONÓMICOS</legend>
+        <label for="">Precio</label>
+        <input type="number" name="" id=""> $
+        Impuestos 
+        <select name="impuestos" id="impuestos">
+          <option value="4">4%</option>
+          <option value="12">12%</option>
+          <option value="15">15%</option>
+        </select>
     </fieldset>
+    <input type="button" value="Guardar cambios">
+    <input type="button" value="Borrar los datos introducidos">
   </form>
   </body>
 </html>
